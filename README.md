@@ -83,6 +83,9 @@ Save api to Mongodb
 
 ![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/Save_to_mongodb.png)
 
+
+[API_TIKI & Backup Mongodb](https://drive.google.com/drive/folders/1B39NhUfhdTTqFMDqCLnhfMVlU20frHj9?usp=drive_link)
+
 ### ETL pipeline to migrate data from Mongodb to postgresSQL
 
 #### Extract

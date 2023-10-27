@@ -66,7 +66,7 @@ Each category i see having 50 pages and each pages have roughly 40 products, so 
 
 #### Data Flow Diagram
 
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/data%20flow%20diagram.png)
 
 #### Detailed code walkthrough
 
@@ -75,42 +75,43 @@ with each category_id and page i send request to get all product_id in one page 
 
 After getting all product_id in one page of category, then i wil get all API of each product and save to MongoDB, Because the data sent back is in json format, it is very suitable to save the entire api to MongoDB.
 
-\\\\\\\\ picture_parse
-\\\\\\\\ picture_parse_page
-\\\\\\\\ picture_parse_product
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/parse.png)
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/parse_page.png)
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/parse_product.png)
 
 Save api to Mongodb
 
-\\\\\\\\ picture_save_to_mongodb
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/Save_to_mongodb.png)
 
 ### ETL pipeline to migrate data from Mongodb to postgresSQL
 
 #### Extract
-\\\\\\\\\\\\\ picture_extract
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/extract-1.png)
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/extract-2.png)
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/extract-3.png)
 #### Transform
-\\\\\\\\\\\\\ picture_transform
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/transform-product.png)
 #### Load
 
-\\\\\\\\\\\\\ picture_load
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/load_to_psql.png)
 
 ### Using superset connect to warehouse to visualize data
 
-
-
 #### 1. Top 10 danh mục có số lượng sản phẩm bán ra nhiều nhất
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau1.jpg)
 
 #### 2. Tạo Biểu đồ tròn để thể hiện tỷ lệ các sản phẩm có sẵn (inventory_status) so với sản phẩm hết hàng.
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau2.jpg)
 #### 3. Thống kê 5 brand có lượt bán nhiều nhất
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau3.jpg)
 #### 4. Tổng số sản phẩm bán ra
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau%204.jpg)
 #### 5. Số lượng seller
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau5.jpg)
 #### 6. Vẽ biểu đồ Phân phối rating
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau6.jpg)
 #### 7. Top 10 seller nhiều sản phẩm nhất trên Tiki, số lượng là bao nhiêu
-
+![image](https://github.com/nguyennamde/Crawl-Tiki-For-Analysis/blob/main/assess/cau%207.jpg)
 
 
 

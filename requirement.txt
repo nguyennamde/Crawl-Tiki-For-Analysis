@@ -1,0 +1,8 @@
+json
+requests
+psycopg2
+psycopg2-bianry
+pymongo
+sqlalchemy
+pandas
+scrapy-user-agent

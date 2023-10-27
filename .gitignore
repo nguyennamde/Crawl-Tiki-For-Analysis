@@ -1,0 +1,4 @@
+env
+tikiscraper/crawler.log
+tikiscraper/product_tiki.json
+.DS_Store
